@@ -65,7 +65,7 @@ const Profile: React.FC = () => {
           setUser(response.data)
         }
       })
-      .catch(err => {
+      .catch(() => {
         addToast({
           type: 'error',
           title: 'An error occurred, please try again'
