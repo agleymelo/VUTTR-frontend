@@ -6,6 +6,7 @@ import { Container, Error } from './styles'
 
 interface ITextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   name: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   register: any
   error: string | undefined
   containerStyle?: Record<string, unknown>
